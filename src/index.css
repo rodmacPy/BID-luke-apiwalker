@@ -49,5 +49,7 @@ p{
 }
 span{
     color: rgb(173, 75, 75);
-    /* font-size: 1.2em; */
+}
+img{ 
+    width: 400px;
 }

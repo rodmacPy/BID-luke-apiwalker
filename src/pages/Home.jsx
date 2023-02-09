@@ -27,8 +27,7 @@ export const Home = () => {
     const handleInputChange = ({ target }) => {
         setIdInput(target.value)
     }
-    const saludo = 'hola'
-    const saludo2 = 'mundo'
+
     return (
         <>
             <form>
@@ -57,7 +56,7 @@ export const Home = () => {
             <button onClick={handleSearch}>Search</button>
             </form>
 
-            <Outlet context={[saludo, saludo2]} />
+            <Outlet />
         </>
     )
 }

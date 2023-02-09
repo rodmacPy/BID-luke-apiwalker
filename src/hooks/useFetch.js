@@ -8,7 +8,6 @@ export const useFetch = (url) => {
         hasError: null
     })
     const [results, setResults] = useState('')
-    // const [error, setError] = useState('')
 
     const getFetch = async () => {
         setState({
@@ -21,9 +20,8 @@ export const useFetch = (url) => {
             setResults(resp.data)
 
         } catch (error) {
-            //  setError(error);
             throw setState({
-                data: results,
+                data: null,
                 isLoading: false,
                 hasError: error
             })
